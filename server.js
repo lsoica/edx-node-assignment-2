@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const routes = require('./routes/index.js')
 
-global.store = {}
+global.store = {posts:[]}
 
 let app = express()
 

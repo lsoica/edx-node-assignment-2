@@ -4,6 +4,7 @@ module.exports = {
     },
     addPost(req, res) {
         let newPost = req.body
+        newPost.comments = []
         let id = store.posts.length
         store.posts.push(newPost)
         res.status(201).send({id: id})
